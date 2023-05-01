@@ -1,0 +1,214 @@
+@import 'vars';
+@import 'mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Helvetica';
+}
+.container{
+    height: 100%;
+    header{
+        height: 90%;
+        background: url(slike/intro.jpg);
+        background-size: cover;
+        position: relative;
+        .head-div{
+            text-align: center;
+            background-color: rgba($color: $header-footer, $alpha: .5);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: white;
+            font-size: 1.4em;
+            padding: .8em;
+        }
+        nav{
+            background-color: $header-footer;
+            height: 6%;
+            position: relative;
+            .menu-div{
+                background-color: $red;
+                position: absolute;
+                right: 0;
+                height: 100%;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    padding: .7em;
+                }
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: end;
+                li{
+                    padding: 1em 2em;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        color: white;
+                        &.settings{
+                            padding-right: 4em;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    main{
+        .button-section{
+            display: flex;
+            justify-content: end;
+            padding: 2em 3em;
+            button{
+                padding: .7em 2em;
+                border-radius: 30px;
+                margin-right: 3em;
+                border: 1px solid $btn-hover;
+                color: $font-color;
+                background-color: white;
+                &:hover{
+                    color: white;
+                    background-color: $btn-hover;
+                }
+                &.company{
+                    margin-right: 25em;
+                }
+            }
+        }
+        .div-section{
+            background-color: $section-bg;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            .div-container{
+                width: 40%;
+                margin: 0 auto;
+                .img-div{
+                    display: flex;
+                    &:nth-child(2){
+                        flex-direction: row-reverse;
+                    }
+                    .text-container{
+                        font-size: 1.4em;
+                        height: fit-content;
+                        margin: 3em 2em;
+                        display: none;
+                        p{
+                            color: $red;   
+                        }
+                    }
+                    img{
+                        width: 30%;
+                        border-radius: 50%;
+                        opacity: .6;
+                        &:hover+.text-container{
+                            display: block;
+                        }
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .table-section{
+            margin-top: 3em;
+            text-align: center;
+            margin-bottom: 5em;
+            h2{
+                margin-bottom: 2em;
+            }
+            p{
+                margin-bottom: 2em;
+                color: $font-color;
+            }
+            table{
+                width: 50%;
+                margin: 0 auto;
+                border-collapse: collapse;
+                .red{
+                    background-color: $red;
+                    color: white;
+                    border: 1px solid black;
+                }
+                .darkCol{
+                    background-color: $header-footer;
+                    color: white;
+                    border: 1px solid gray;
+                }
+                th,td{
+                    padding: .6em;
+                }
+                .td{
+                    background-color: $header-footer;
+                    color: white;
+                    border: 1px solid gray;
+                }
+                td{
+                    border: 1px solid gray;
+                }
+            }
+        }
+        .form-section{
+            background-color: $section-bg;
+            h2{
+                padding: 2em;
+                text-align: center;
+            }
+            .form-div{
+                display: flex;
+                padding: 3em;
+                justify-content: space-evenly;
+                iframe{
+                    width: 20%;
+                    height: 340px;
+                }
+                form{
+                    background-color: $red;
+                    height: 290px;
+                    width: 50%;
+                    input, select, textarea{
+                        padding:1em;
+                    }
+                    select{
+                        width: 10%;
+                        margin: 2%;
+                    }
+                    input[type="text"]{
+                        width: 80%;
+                    }
+                    input[type="email"]{
+                        width: 92.2%;
+                        margin: 2%;
+                    }
+                    textarea{
+                        width: 92.2%;
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background-color: $header-footer;
+        height: 3%;
+        text-align: center;
+        padding-top: 1%;
+        font-weight: bold;
+        p{
+            color: white;
+            span{
+                color: $red;
+            }
+        }
+    }
+}

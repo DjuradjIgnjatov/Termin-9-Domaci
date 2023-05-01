@@ -12,17 +12,115 @@
     <div class="container">
         <header>
             <nav>
-                <div class="menu-div">
-                    <img src="slike/menu.png" alt="menu">
+                <div class="nav-div">
+                    <div class="menu-div">
+                        <img src="slike/menu.png" alt="menu">
+                    </div>
                     <ul>
-                        <li>Home</li>
-                        <li>My Profile</li>
-                        <li>This month</li>
-                        <li>Settings</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">This Month</a></li>
+                        <li><a href="#" class="settings">Settings</a></li>
                     </ul>
                 </div>
             </nav>
+            <div class="head-div">
+                <p>Welcome to</p>
+                <h1>Billing the Kid</h1>
+                <p>Your personal financial manager. Online.</p>
+            </div>
         </header>
+
+        <main>
+            <section class="button-section">
+                <button>Startup</button>
+                <button>Small business</button>
+                <button class="company">Medium company</button>
+            </section>
+
+            <section class="div-section">
+                <div class="div-container">
+                    <div class="img-div">
+                        <img src="slike/fin1.jpg">
+                        <div class="text-container">
+                            <h3>GET YOUR FINANCIES IN ORDER</h3>
+                            <p>Choose a plan that fits your needs.</p>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="slike/fin2.jpeg">
+                        <div class="text-container">
+                            <h3>SAVE MORE THAN EVER</h3>
+                            <p>Click to get fast and easy tips.</p>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="slike/fin3.jpg">
+                        <div class="text-container">
+                            <h3>WE ARE ON THE SAME TEAM!</h3>
+                            <p>Our experts are just a call away.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>PRICING</h2>
+                <p>Our services prices</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" rowspan="2"></th>
+                            <th class="red" colspan="2">Price</th>
+                        </tr>
+                        <tr>
+                            <th class="darkCol">1 Year</th>
+                            <th class="darkCol">1 Years</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="red" rowspan="3">Location</td>
+                                <th class="td">Startup</th>
+                                <td>$3000</td>
+                                <td>$3000</td>
+                            </tr>
+                            <tr>
+                                <th class="td">Small Business</th>
+                                <td>$3000</td>
+                                <td>$3000</td>
+                            </tr>
+                            <tr>
+                                <th class="td">Medium Company</th>
+                                <td>$3000</td>
+                                <td>$3000</td>
+                            </tr>
+                        </tbody> 
+                </table>
+            </section>
+
+            <section class="form-section">
+                <h2>CONTACT US</h2>
+                <div class="form-div">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1682973366767!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form action="#">
+                        <select>
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                        </select>
+                        <input type="text" name="name" placeholder="Your name">
+                        <br>
+                        <input type="email" name="email" placeholder="Your e-mail">
+                        <br>
+                        <textarea name="message" cols="10" rows="3" placeholder="Your message"></textarea>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright © 2016 <span>Billing the Kid</span></p>
+        </footer>
     </div>
 
 </body>

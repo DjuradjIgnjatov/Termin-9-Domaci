@@ -48,11 +48,107 @@
 @mixin mali_ekran{
     @media screen and (max-width: 500px){
         @content;
-        body{
-            .container{
-                overflow-x: hidden;
-                header{
-                    background: #000;
+        .container{
+            border: 2px solid red;
+            overflow-x: hidden;
+            header{
+                background-image: none;
+                background-color: black;
+                height: 43%;
+                nav{
+                    height: fit-content;
+                    .nav-div{
+                        .menu-div{
+                            height: 100%;
+                            width: 100%;    
+                            &:hover + ul>li{
+                                display: block;
+                            }
+                            &:hover{
+                                height: 22%;
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            padding-top: 4em;
+                            text-align: center;
+                            li{
+                                display: none;
+                                &:nth-child(4){
+                                    padding-left: 6.5em;
+                                }
+                                a{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            main{
+                .button-section{
+                    button{
+                        &.company{
+                            margin-right: -2em;
+                        }
+                    }
+                }
+                .div-section{
+                    height: 1100px;
+                    .div-container{
+                        .img-div{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 8em;   
+                            .text-container{
+                                display: block;
+                                margin-left: -5em;
+                            }
+                            &:nth-child(2){
+                                flex-direction: column;
+                                margin-top: -2em;
+                                .text-container{
+                                    padding-left: 2.5em;
+                                }
+                            }
+                            img{
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+                .form-section{
+                    .form-div{
+                        iframe{
+                            width: 70%;
+                        }
+                        form{
+                            width: 100%;
+                            height: 250px;
+                            padding-top: 1em;
+                            display: flex;
+                            flex-direction: column;
+                            select{
+                                width: 93%;
+                                margin-bottom: 1em;
+                            }
+                            input[type="text"]{
+                                width: 84.5%;
+                                margin-left: 2%;
+                                margin-bottom: -1em;
+                            }
+                            input[type="email"]{
+                                width: 84.5%;
+                                margin-bottom: -1em;
+                            }
+                            textarea{
+                                width: 78%;
+                                padding: 2em;
+                                
+                            }
+                        }
+                    }
                 }
             }
         }
